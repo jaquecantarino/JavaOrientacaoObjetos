@@ -26,6 +26,9 @@ public class TestaMetodo {
 		}
 		System.out.println(conta2.saldo);
 		System.out.println(conta.saldo);
+		
+		conta.titular="Ana Maria";
+		System.out.println(conta.titular);
 
 	}
 
