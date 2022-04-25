@@ -13,7 +13,7 @@ public class TesteReferencias {
 		g1.setNome("Maria");
 		g1.setSalario(5000.0);
 		
-		Funcionario f = new Funcionario();
+		Funcionario f = new Designer();
 		f.setSalario(2000.0);
 		
 		ControleBonificacao controle = new ControleBonificacao();

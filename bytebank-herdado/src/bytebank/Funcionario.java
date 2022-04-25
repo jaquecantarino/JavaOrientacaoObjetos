@@ -1,6 +1,6 @@
 package bytebank;
 
-public class Funcionario {
+public abstract class Funcionario { /* funcionario é um conceito, logo não pode ser instanciada, apenas seus filhos */
 	/* atributos */
 	
 	private String nome;
@@ -9,15 +9,29 @@ public class Funcionario {
 	// protected double salario; /* publico para os filhos/subclasse, 
 	//								escondido para outras classes */
 	
+    private int senha;
+	
 	/* construtor vazio */
 	public Funcionario() {
 		
 	}
 	
 	/* metodo de utilização */
-	public double getBonificacao() {
+	/*public double getBonificacao() {
 		return this.salario*0.05;
+	}*/
+	
+	public abstract double getBonificacao();{
+		
 	}
+
+    public boolean autentica(int senha) {
+        if(this.senha == senha) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 	
 	/* gets e sets para manipular os dados. */
 	public String getNome() {
@@ -38,6 +52,10 @@ public class Funcionario {
 	public void setSalario(double salario) {
 		this.salario = salario;
 	}
+	
+    public void setSenha(int senha) {
+        this.senha = senha;
+    }
 	
 	
 
