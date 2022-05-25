@@ -1,0 +1,26 @@
+Anotações são os @ que usamos no código, as anotações vem, geralmente, do javadoc
+e tem como objetivo passar algumas informações para o javadoc, para que quando ele
+ler gerar uma pagina html e associar os textos aos seus campos.
+Exemplo: @author Jaque @version 1.0
+
+Foi criado para dar menos peso/carga ao xml, que é um arquivo de configuração, desde o java 1.5
+
+Usamos bastante anotações para configurar banco de dados, por exemplo.
+Antes essa configuração acontecia dentro do xml, que é muito mais verboso,
+atualmente podemos usar a anotação @Entity e @Table(name="xpto") para indicarmos
+a criação de uma nova tabela.
+Vantagem: não preciso ter as configurações em um arquivo extra, elas ficam claras
+deixando também o arquivo xml menor.
+
+Definição: Uma anotação é uma configuração dentro do seu código java.
+
+*Quem vai definir quem está lendo as configurações da anotação usada é o import que usamos.
+Podendo ser: Spring, Micronaut, Hibernate ou o JPA, por exemplo.
+
+--Podemos escrever as nossas próprias anotações (desde que elas façam sentido.)
+---Criar um arquivo do tipo Annotation
+---Nesse arquivo configurar as anotações:
+   @Target - que vai definir onde vamos usar essa anotação
+   exemplo: @Target(ElementType.FIELD) == será usada em um campo, isto é, um atributo
+   @Retention - que vai dizer quando essa anotação deve funcionar.
+   exemplo: @Retention(RetentionPolicy.RUNTIME) == significa que ela deve funcionar em tempo de complicação.
