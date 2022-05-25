@@ -1,0 +1,34 @@
+List.of = usando ele eu posso já popular a minha lista.
+
+Fluxo Reativo.
+
+Java Modular.
+declaramos um modulo. Tem o encapsulamento de APIS.
+JDK também foi modularizado.
+
+Java 9 - uma nova versão de 6 em 6 meses.
+
+Inferencia de variavel: vai servir para escopo de metodo, e é basicamente para você mudar o tipo de referencia para var.
+
+Interface para garbage collector.
+
+Java 11
+Execução do arquivo com um unico comando:
+java arquivo.java
+
+HttpClient
+
+Java 12
+Inclusão do novo garbage collector
+
+Java 13
+Mudanças na Socket API
+
+Text Blocks: """ ( três aspas duplas )
+
+Java 14
+Helpful NullPointerExceptions: Auxilia a encontrar onde está dando Null Pointer na aplicação sem debugar
+
+Switch Expressions: podemos usar lambda
+
+Records(Preview): serve para facilitar as escritar de DTO, que por debaixo dos panos é uma classe.
