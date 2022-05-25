@@ -1,0 +1,20 @@
+Enums existem para definir valores fixos.
+- Criamos um arquivo no projeto do tipo enum.
+--Cria-se os valores fixos que deseja ter (sintaxe: valor1, valor2, valor3;)
+
+!!Importante:
+! Não conseguimos instanciar o Enum como uma classe, 
+! precisamos instanciar um dos valores, assim:
+! Prioridade pMin = Prioridade.Min
+! Onde: Prioridade é nome do nosso arquivo Enum, pMin é o nome que daremos
+! para esse valor no main, e, Prioridade.Min é o valor fixo que estamos trazendo. !!
+
+Os métodos mais importantes no Enum são:
+name() - que traz o nome do nosso valor fixo.
+(seguindo exemplo pMin.name() = Min)
+ordinal() - que traz a "posição" do nosso valor fixo.
+(exemplo: 
+ se meu enum Prioridade tem os valores fixos Min, Normal, Max 
+  pMin.ordinal() = 0, porque ele é o primeiro valor fixo.
+  enquanto Normal=1 e Max=2 )
+  **é a ordem do valor fixo na lista de valores fixos em enum**
