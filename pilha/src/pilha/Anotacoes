@@ -1,0 +1,15 @@
+Pilha é uma maneira de organizar a execução do código.
+
+Apenas o método do topo da pilha é executado na hora, mas os metodos anteriores não são finalizados, eles ficam parados.
+Quando termina de executar toda a pilha ele volta executando o restante dos códigos abaixo da chamada.
+*visualize exemplo no arquivo Fluxo.java na pasta*
+
+Pilha é um conceito não exclusivo de Orientação a Objetos, muitas outras linguagens usam esse conceito.
+
+DEPURAÇÃO:
+Marco (com dois cliques na frente do numero no eclipse, ou apenas um no intellij) onde que que meu código pare.
+Para seguir passo a passo eu dou F6 no eclipse e F8 no Intellij
+
+Para que serve: Consigo ver passo a passo a execução do meu código, me ajuda a entender qual parte do código está devolvendo erro, e observar a ordem de execução.
+
+
